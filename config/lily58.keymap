@@ -9,6 +9,12 @@
 #include <dt-bindings/zmk/ext_power.h>
 #include <dt-bindings/zmk/keys.h>
 
+// Overwrite defaults
+&lt {
+    // tapping-term-ms = <200>; // This is the value already set by default
+    tapping-term-ms = <225>;
+};
+
 / {
     macros {
 /*
@@ -66,10 +72,6 @@
             bindings = <&kp RETURN>, <&mo 2>;
         };
 */
-	&lt {
-	    // tapping-term-ms = <200>; // This is the value already set by default
-    	    tapping-term-ms = <225>;
-	};
 
         hypr: hyper_macro {
             compatible = "zmk,behavior-macro";

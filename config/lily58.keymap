@@ -69,6 +69,7 @@
             #binding-cells = <0>;
             bindings = <&kp LCTL &kp LALT &kp LSHFT>;
         };
+    };
 
     keymap {
         compatible = "zmk,keymap";
@@ -125,7 +126,7 @@
 &trans      &none           &none             &none              &none              &none                           &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &none  &none
 &trans      &studio_unlock  &ext_power EP_ON  &ext_power EP_OFF  &ext_power EP_TOG  &none         &none     &none   &none     &none     &none   &none      &none  &none
                                                            &trans  &trans  &trans  &trans                   &trans  &trans  &trans  &trans
-            >
+            >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };

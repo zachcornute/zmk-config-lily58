@@ -11,13 +11,14 @@
 
 / {
     macros {
+/*
         spotlight: spotlight {
             label = "spotlight";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&macro_press &kp LGUI>, <&macro_tap &kp SPACE>, <&macro_release &kp LGUI>;
         };
-
+*/
         // Emoji
         mac_emoji: mac_emoji {
             label = "mac_emoji";
@@ -35,6 +36,7 @@
     };
 
     behaviours {
+/*
         td_mac: tap_dance_multi_mac {
             compatible = "zmk,behavior-tap-dance";
             label = "TAP_DANCE_MULTI_MAC";
@@ -42,6 +44,7 @@
             tapping-term-ms = <200>;
             bindings = <&kp ESC>, <&spotlight>, <&mac_emoji>;
         };
+*/
 
         myspace: space_mod {
             compatible = "zmk,behavior-hold-tap";

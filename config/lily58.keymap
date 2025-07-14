@@ -69,7 +69,7 @@
 	tl: tap_layer {
             compatible = "zmk,behavior-hold-tap";
             label = "TAP_LAYER";
-            #bidnding-cells = <2>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <225>;
             quick-tap-ms = <0>;

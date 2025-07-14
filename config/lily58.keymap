@@ -16,7 +16,8 @@
             label = "mac_emoji";
             compatible = "zmk,behaviour-macro";
             #binding-cells = <0>;
-            <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&macro_release &kp LGUI>;
+            bindings = <&macro_press &kp LGUI>, <&macro_press &kp LCTRL>, <&macro_tap &kp SPACE>, <&macro_release &kp LCTRL>, <&macro_release &kp LGUI>;
+        };
 
         win_emoji: win_emoji {
             label = "win_emoji";

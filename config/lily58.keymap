@@ -66,14 +66,9 @@
             bindings = <&kp RETURN>, <&mo 2>;
         };
 */
-	tl: tap_layer {
-            compatible = "zmk,behavior-hold-tap";
-            label = "TAP_LAYER";
-            #binding-cells = <2>;
-            flavor = "tap-preferred";
-            tapping-term-ms = <225>;
-            quick-tap-ms = <0>;
-            bindings = <&kp>, <&mo>;
+	&lt {
+	    // tapping-term-ms = <200>; // This is the value already set by default
+    	    tapping-term-ms = <225>;
 	};
 
         hypr: hyper_macro {
@@ -108,7 +103,7 @@
 &kp TAB    &kp Q   &kp W   &kp E   &kp R     &kp T                            &kp Y   &kp U     &kp I      &kp O    &kp P     &kp BSPC
 &kp LCTRL  &kp A   &kp S   &kp D   &kp F     &kp G                            &kp H   &kp J     &kp K      &kp L    &kp SEMI  &kp SQT
 &kp LSHFT  &kp Z   &kp X   &kp C   &kp V     &kp B   &kp LBKT       &kp RBKT  &kp N   &kp M     &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                    &kp ESC  &kp  LALT  &kp LGUI  &tl SPACE 1       &tl RETURN 2  &kp BSPC  &hypr  &meh
+                    &kp ESC  &kp  LALT  &kp LGUI  &lt 1 SPACE       &lt 2 RETURN  &kp BSPC  &hypr  &meh
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
